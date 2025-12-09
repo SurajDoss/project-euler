@@ -1,7 +1,10 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import com.sun.jdi.IntegerType;
+
 public class Main {
     public static void main(String[] args) {
         System.out.printf("Hello and welcome!");
+
+        Integer sum  = MultiplesOf3Or5.getMultiplesOf3_Or_5(1000);
+        System.out.printf("Multiples of 3 or 5 :: " + sum);
     }
 }
