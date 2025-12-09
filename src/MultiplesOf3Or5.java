@@ -11,11 +11,9 @@ public class MultiplesOf3Or5 {
         if( max == null ){
             return max;
         }
-
         /**
          * S    =  ( n * ( a(1) + a(n) ) ) / 2
          */
-
         Integer for3 = ( ( getNTimesLargest( 3, max) * ( 3 + getLargestMultiple(3, max) ) ) / 2 );
         Integer for5 = ( (  getNTimesLargest( 5, max) * ( 5 + getLargestMultiple(5, max) ) ) / 2);
         Integer for15 = ( (  getNTimesLargest( 15, max) * ( 15 + getLargestMultiple(15, max) ) ) / 2 );
@@ -23,6 +21,7 @@ public class MultiplesOf3Or5 {
         return (for3 + for5) - for15;
     }
 
+    
     /**
      * to get the largest value multiple
      *
@@ -34,6 +33,9 @@ public class MultiplesOf3Or5 {
         return m * getNTimesLargest(m, N);
     }
 
+    /**
+    * Provide the NTimesLargestNumber
+    */
     private static Integer getNTimesLargest(int m, int N){
         return ( N - 1 ) / m; //below N
     }
