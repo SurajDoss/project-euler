@@ -1,5 +1,3 @@
-import com.sun.jdi.IntegerType;
-
 public class Main {
     public static void main(String[] args) {
         System.out.printf("Hello and welcome!");
@@ -9,6 +7,9 @@ public class Main {
 
         Integer EvenFibonacciNumber  = EvenFibonacciNumbers.calculateTheSumEvenFiboncciNumbers(4000000);
         System.out.printf("Sum of even fibonacci Number :: " + EvenFibonacciNumber);
+
+        Long largestPrimeFactor = LargestPrimeFactor.largestPrimeFactor();
+        System.out.printf("Largest Prime Factor ::: " + largestPrimeFactor);
 
     }
 }
